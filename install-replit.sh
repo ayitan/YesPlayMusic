@@ -10,13 +10,13 @@ fi
 # 安装
 if [[ ! -d api ]];then
     mkdir api
-    git clone https://github.com/Binaryify/NeteaseCloudMusicApi ./api &&  \
+    git clone https://gitlab.com/Binaryify/NeteaseCloudMusicApi.git ./api &&  \
     cd api && npm install && cd ..
 fi
 
 if [[ ! -d music ]];then
     mkdir music
-    git clone https://github.com/qier222/YesPlayMusic ./music && \
+    git clone https://github.com/ayitan/YesPlayMusic ./music && \
     cd music && cp .env.example .env && npm install --force && npm run build && cd ..
 fi
 
